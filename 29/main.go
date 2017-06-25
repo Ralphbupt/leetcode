@@ -58,6 +58,6 @@ func main() {
 
 func test(dividend int, divisor int, expected int) {
 	if ret := divide(dividend, divisor); ret != expected {
-   		fmt.Println(str)
+		fmt.Println(str)
 	}
 }

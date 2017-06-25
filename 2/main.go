@@ -33,7 +33,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := &ListNode{}
 	cur := head
 	pos := 0
-	for l1 != nil || l2 != nil || pos!=0{
+	for l1 != nil || l2 != nil || pos != 0 {
 		vx, vy := 0, 0
 		if l1 != nil {
 			vx = l1.Val
