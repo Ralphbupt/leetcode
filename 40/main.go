@@ -1,8 +1,8 @@
 package main
 
 import (
-	"sort"
 	"fmt"
+	"sort"
 )
 
 var res [][]int
@@ -27,14 +27,14 @@ func Recurcive(candidates []int, target int, index int, tmp []int) {
 	}
 
 	for i := index; i < len(candidates); i++ {
-		if i > index && candidates[i] == candidates[i-1] {	// this is important
+		if i > index && candidates[i] == candidates[i-1] { // this is important
 			// because candidates is sorted , so this could be used to escapes the
 			// sfjdifj
 			continue
 		}
 		tmp = append(tmp, candidates[i])
-		Recurcive(candidates, target-candidates[i], i+1,tmp)
-		tmp = tmp[0:len(tmp)-1]
+		Recurcive(candidates, target-candidates[i], i+1, tmp)
+		tmp = tmp[0 : len(tmp)-1]
 	}
 }
 
